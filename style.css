@@ -1,0 +1,236 @@
+/* Predefinisane klase: */
+
+/* BUTTONS: */
+.button_grey {
+	background-color: black;
+	color: grey;
+    border: 1px solid grey;
+    transition-duration: 0.4s;
+}
+
+.button_grey:hover {
+	background-color: grey;
+    color: white;
+    border: 1px solid grey;
+}
+
+
+.button_green {
+	font-size: 14px;
+	background-color: black;
+	color: #0f0;
+    border: 1px solid #0f0;
+    transition-duration: 0.4s;
+}
+
+.button_green:hover {
+	font-size: 14px;
+	background-color: green;
+    color: white;
+    border: 1px solid green;
+}
+
+.button_red {
+	font-size: 14px;
+	background-color: black;
+	color: red;
+    border: 1px solid red;
+    transition-duration: 0.4s;
+}
+
+.button_red:hover {
+	font-size: 14px;
+	background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.button_blue {
+	font-size: 14px;
+	background-color: black;
+	color: blue;
+    border: 1px solid blue;
+    transition-duration: 0.4s;
+}
+
+.button_blue:hover {
+	background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}
+
+.button_purple {
+	font-size: 14px;
+	background-color: black;
+	color: purple;
+    border: 1px solid purple;
+    transition-duration: 0.4s;
+}
+
+.button_purple:hover {
+	font-size: 14px;
+	background-color: purple;
+    color: white;
+    border: 1px solid purple;
+}
+
+.button_orange {
+	font-size: 14px;
+	background-color: transparent;
+	color: orange;
+    border: 1px solid orange;
+    transition-duration: 0.4s;
+}
+
+.button_orange:hover {
+	background-color: orange;
+    color: white;
+    border: 1px solid orange;
+}
+
+.button_cyan {
+	font-size: 14px;
+	background-color: transparent;
+	color: cyan;
+    border: 1px solid cyan;
+    transition-duration: 0.4s;
+}
+
+.button_cyan:hover {
+	background-color: cyan;
+    color: black;
+    border: 1px solid cyan;
+}
+
+button {
+	font-family: courier new;
+	padding: 10px;
+	font-size: 12pt;
+}
+
+button:hover {
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:disabled {
+	cursor: not-allowed;
+}
+
+
+/* INPUT */
+.default_input {
+	height: 18pt;
+	transition-duration: 0.4s;
+	color: #0f0;
+	background: black;
+	border: 1.5px dashed #0f0;
+	width: 50pt;
+	text-align: center;
+}
+
+.default_input:hover {
+	background: white;
+	color: black;
+	border-radius: 11px;
+	transition-duration: all 0.7s;
+	width: 70pt;
+}
+
+.default_input:disabled {
+	height: 18pt;
+	transition-duration: 0.4s;
+	background: grey;
+	border: 1.5px solid #0f0;
+	border-radius: 11px;
+}
+
+/* Select */
+
+select {
+	background-color: black;
+	color: #0f0;
+	border: 1px dashed #0f0;
+	font-family: courier new;
+	font-size: 14pt;
+	transition-duration: 0.4s;
+	text-align: center;
+}
+
+select:hover {
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+}
+
+/* disable outline when focused */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+	background-color: #000;
+}
+
+p, label, li, h1, h3 {
+	color: #0f0;
+	font-family: courier new;
+}
+
+h3 {
+	text-align: center;
+}
+
+#uvod {
+	text-align: center;
+}
+
+#slika {
+	transition-duration: 1s;
+	border-radius: 15px;
+	max-width: 15%;
+    height: auto;
+}
+
+#slika:hover {
+	border-radius: 0px;
+}
+
+#about_div {
+	padding: 15px;
+	color: #0f0;
+	font-family: courier new;
+	border: 1px dashed #0f0;
+	border-radius: 10px;
+	transition-duration: 1s;
+	display: block;
+	max-width: 300px;
+	height: auto;
+    text-align: center;
+    vertical-align: center;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+button {
+	padding: 10px;
+	border-radius: 10px;
+}
+
+td {
+
+}
+
+table {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+#mikac_inc {
+	transition-duration: 0.4s;
+	text-shadow: 0 0 10px #0f0;
+}
