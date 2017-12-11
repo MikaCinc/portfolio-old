@@ -31,6 +31,13 @@ window.onload = function () {
 
 	// @mikac_inc menja boju
 	minc_color()
+
+	document.getElementById("slika").addEventListener("mouseover", function() {
+		this.src="prof2.jpg"
+	})
+	document.getElementById("slika").addEventListener("mouseout", function() {
+		this.src="prof.jpeg"
+	})
 }
 
 function minc_color() {
