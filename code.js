@@ -6,6 +6,10 @@ function github() {
 	window.open("https://github.com/MikaCinc",'_blank');
 }
 
+function linkedin() {
+	window.open("https://www.linkedin.com/in/mikacinc/", '_blank');
+}
+
 function about_div(n) {
 	var height = document.getElementById('slika').height
 	var width = document.getElementById('slika').width
