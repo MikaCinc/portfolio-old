@@ -14,6 +14,18 @@
     border: 1px solid grey;
 }
 
+.button_linkedin {
+	background-color: black;
+	color: #0077B5;
+    border: 1px solid #0077B5;
+    transition-duration: 0.4s;
+}
+
+.button_linkedin:hover {
+	background-color: #0077B5;
+    color: white;
+    border: 1px solid #0077B5;
+}
 
 .button_green {
 	font-size: 14px;
@@ -108,6 +120,10 @@ button {
 	font-size: 12pt;
 }
 
+.findme {
+	font-weight: bolder;
+}
+
 button:hover {
 	border-radius: 5px;
 	cursor: pointer;
@@ -173,11 +189,71 @@ button:focus {
 
 body {
 	background-color: #000;
+	background: linear-gradient(to top left, black 90%, purple)
 }
 
-p, label, li, h1, h3 {
+p, label, li, h1, h3, h4 {
 	color: #0f0;
 	font-family: courier new;
+}
+
+ul {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
+
+h4 {
+	border-left: 3px solid #0f0;
+	padding-left: 10px;
+	margin-left: 10px;
+	text-align: center;
+	display: inline-block;
+}
+
+
+.bythenumber {
+	font-size: 24px;
+	color: cyan;
+	display: inline-block;
+}
+
+.experienceP {
+	font-size: 18px;
+	color: cyan;
+	display: inline-block;
+}
+
+.experienceH4 {
+	font-size: 20px;
+	border-right: 3px solid yellow;
+	padding-right: 12px;
+	margin-right: 10px;
+	display: inline-block;
+	color: yellow;
+}
+
+.experienceDIV {
+	text-align: center;
+}
+
+#experienceTitle {
+	color: yellow;
+}
+
+.interestsP {
+	font-size: 18px;
+	color: lightgoldenrodyellow;
+	display: inline-block;
+}
+
+.interestsDIV {
+	text-align: center;
+}
+
+#interestsTitle {
+	color: lightgoldenrodyellow;
 }
 
 h3 {
@@ -221,7 +297,8 @@ button {
 }
 
 td {
-
+	color: #0f0;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 table {
