@@ -115,7 +115,7 @@
 }
 
 button {
-	font-family: courier new;
+	font-family: Inconsolata, monospace;
 	padding: 10px;
 	font-size: 12pt;
 }
@@ -167,7 +167,7 @@ select {
 	background-color: black;
 	color: #0f0;
 	border: 1px dashed #0f0;
-	font-family: courier new;
+	font-family: Roboto Mono, monospace;
 	font-size: 14pt;
 	transition-duration: 0.4s;
 	text-align: center;
@@ -194,7 +194,7 @@ body {
 
 p, label, li, h1, h3, h4 {
 	color: #0f0;
-	font-family: courier new;
+	font-family: Roboto Mono, monospace;
 }
 
 ul {
@@ -268,7 +268,9 @@ h3 {
 	transition-duration: 1s;
 	border-radius: 15px;
 	max-width: 15%;
-    height: auto;
+	height: auto;
+	box-shadow: 15px 10px orangered;
+	margin-bottom: 30px;
 }
 
 #slika:hover {
@@ -277,18 +279,21 @@ h3 {
 
 #about_div {
 	padding: 15px;
-	color: #0f0;
+	color: #def919;
+	text-rendering: optimizeLegibility !important;
 	font-family: courier new;
-	border: 1px dashed #0f0;
-	border-radius: 10px;
+	border: 10px solid #def919;
 	transition-duration: 1s;
+	background-color: #4791ff;
 	display: block;
 	max-width: 300px;
 	height: auto;
     text-align: center;
     vertical-align: center;
     margin-right:auto;
-    margin-left:auto;
+	margin-left:auto;
+	margin-bottom: 10px;
+	box-shadow: 15px 10px #1536bb;
 }
 
 button {
@@ -298,7 +303,7 @@ button {
 
 td {
 	color: #0f0;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: Roboto Mono, monospace;
 }
 
 table {
@@ -310,4 +315,5 @@ table {
 #mikac_inc {
 	transition-duration: 0.4s;
 	text-shadow: 0 0 10px #0f0;
+	font-family: Inconsolata, monospace !important;
 }

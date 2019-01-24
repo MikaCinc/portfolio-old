@@ -24,23 +24,23 @@ function about_div(n) {
 }
 
 window.onload = function () {
-	var a = "1px solid #0f0"
+	/* var a = "1px solid #0f0"
 	var b = "1px solid red"
 	var interval = setInterval (function() {
 		var timeout = setTimeout (function() {
 			document.getElementById('about_div').style.border = a
 		}, 1000)
 		document.getElementById('about_div').style.border = b
-	}, 2000)
+	}, 2000) */
 
 	// @mikac_inc menja boju
 	minc_color()
 
 	document.getElementById("slika").addEventListener("mouseover", function() {
-		this.src="prof2.jpg"
+		this.src="prof2.jpeg"
 	})
 	document.getElementById("slika").addEventListener("mouseout", function() {
-		this.src="prof.jpeg"
+		this.src="prof.jpg"
 	})
 }
 
