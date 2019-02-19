@@ -42,6 +42,23 @@ window.onload = function () {
 	document.getElementById("slika").addEventListener("mouseout", function() {
 		this.src="prof.jpg"
 	})
+
+	//Content switching
+
+	var elems = document.getElementsByClassName("switch");
+	var contents = document.getElementsByClassName("content_switch");
+	console.log(contents[3].id.split("_")[1], elems[3].innerHTML.toLowerCase())
+	for(let i=0; i<elems.length; i++) {
+		elems[i].addEventListener("click", ()=> {
+			for(let n=0; n<elems.length; n++) {
+				if(elems[i].innerHTML.toLowerCase() === contents[n].id.split("_")[1]) {
+					contents[n].style.display = "block";
+				} else {
+					contents[n].style.display = "none";
+				}
+			}
+		})
+	}
 }
 
 function minc_color() {
@@ -49,8 +66,12 @@ function minc_color() {
 		return Math.floor(Math.random()*255)
 	}
 
+	function rnd_rgb() {
+		return "rgb( " + rnd_color() + ", " + rnd_color() + ", " + rnd_color() + ")";
+	}
+
 	var interval = setInterval(function() {
-		document.getElementById("mikac_inc").style.color = "rgb( " + rnd_color() + ", " + rnd_color() + ", " + rnd_color() + ")"
+		document.getElementById("mikac_inc").style.color = rnd_rgb();
+		document.getElementById("mikac_inc").style.textShadow = "0 0 20px " + rnd_rgb();
 	}, 1000)
 }
-

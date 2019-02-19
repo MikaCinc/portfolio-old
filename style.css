@@ -120,8 +120,55 @@ button {
 	font-size: 12pt;
 }
 
+#menu {
+	flex: 0 0 30%;
+	border: 1px solid purple;
+	min-width: 400px;
+}
+
+#content {
+	position: relative;
+	flex: 1;
+	border: 1px solid purple;
+	margin-left: 1px;
+}
+
+#findme_links {
+	margin-bottom: 20px;
+	display: inline-block;
+	background: linear-gradient(45deg, orangered, yellow, aqua);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .findme {
+	font-size: 15px;
 	font-weight: bolder;
+	text-decoration: none;
+	color: transparent;
+	border-bottom: 3px solid #def919;
+	font-family: Roboto Mono,monospace;
+	text-rendering: optimizeLegibility;
+	margin: 10px;
+	padding-bottom: 5px;
+	transition: transform .3s ease-out;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.findme .arrow{
+	margin-left: 5px;
+	transition-duration: 0.4s;
+}
+
+.findme:hover .arrow{
+	margin-left: 15px;
+}   
+	
+.findme .arrow:hover{
+	margin-left: 5px;
 }
 
 button:hover {
@@ -132,7 +179,6 @@ button:hover {
 button:disabled {
 	cursor: not-allowed;
 }
-
 
 /* INPUT */
 .default_input {
@@ -189,7 +235,7 @@ button:focus {
 
 body {
 	background-color: #000;
-	background: linear-gradient(to top left, black 90%, purple)
+	display: flex;
 }
 
 p, label, li, h1, h3, h4 {
@@ -267,7 +313,7 @@ h3 {
 #slika {
 	transition-duration: 1s;
 	border-radius: 15px;
-	max-width: 15%;
+	width: 200px;
 	height: auto;
 	box-shadow: 15px 10px orangered;
 	margin-bottom: 30px;
@@ -277,6 +323,31 @@ h3 {
 	border-radius: 0px;
 }
 
+.switch {
+	padding: 15px;
+	color: #0f0;
+	text-rendering: optimizeLegibility !important;
+	font-family: courier new;
+	border: 5px solid #0f0;
+	transition-duration: 0.2s;
+	background-color: black;
+	display: block;
+	max-width: 300px;
+	height: auto;
+    text-align: center;
+    vertical-align: center;
+    margin-right:auto;
+	margin-left:auto;
+	margin-bottom: 30px;
+	box-shadow: 15px 10px purple;
+	cursor: pointer;
+}
+
+.switch:hover {
+	border: 5px solid black;
+	box-shadow: 20px 15px purple;
+}
+
 #about_div {
 	padding: 15px;
 	color: #def919;
@@ -284,7 +355,7 @@ h3 {
 	font-family: courier new;
 	border: 10px solid #def919;
 	transition-duration: 1s;
-	background-color: #4791ff;
+	background-color: black;
 	display: block;
 	max-width: 300px;
 	height: auto;
@@ -313,7 +384,17 @@ table {
 }
 
 #mikac_inc {
-	transition-duration: 0.4s;
+	transition-duration: 1s;
 	text-shadow: 0 0 10px #0f0;
 	font-family: Inconsolata, monospace !important;
+}
+
+.content_switch {
+	display: none;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
 }
