@@ -50,6 +50,10 @@ window.onload = function () {
 	console.log(contents[3].id.split("_")[1], elems[3].innerHTML.toLowerCase())
 	for(let i=0; i<elems.length; i++) {
 		elems[i].addEventListener("click", ()=> {
+			for(let k=0; k<elems.length; k++) {
+				elems[k].className = "switch"
+			}
+			elems[i].className = "switch selected";
 			for(let n=0; n<elems.length; n++) {
 				if(elems[i].innerHTML.toLowerCase() === contents[n].id.split("_")[1]) {
 					contents[n].style.display = "block";
