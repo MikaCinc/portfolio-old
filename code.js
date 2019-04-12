@@ -56,7 +56,7 @@ window.onload = function () {
 			elems[i].className = "switch selected";
 			for(let n=0; n<elems.length; n++) {
 				if(elems[i].innerHTML.toLowerCase() === contents[n].id.split("_")[1]) {
-					contents[n].style.display = "block";
+					contents[n].style.display = "inline-block";
 				} else {
 					contents[n].style.display = "none";
 				}

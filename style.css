@@ -1,117 +1,118 @@
 /* Predefinisane klase: */
 
 /* BUTTONS: */
+
 .button_grey {
 	background-color: black;
 	color: grey;
-    border: 1px solid grey;
-    transition-duration: 0.4s;
+	border: 1px solid grey;
+	transition-duration: 0.4s;
 }
 
 .button_grey:hover {
 	background-color: grey;
-    color: white;
-    border: 1px solid grey;
+	color: white;
+	border: 1px solid grey;
 }
 
 .button_linkedin {
 	background-color: black;
 	color: #0077B5;
-    border: 1px solid #0077B5;
-    transition-duration: 0.4s;
+	border: 1px solid #0077B5;
+	transition-duration: 0.4s;
 }
 
 .button_linkedin:hover {
 	background-color: #0077B5;
-    color: white;
-    border: 1px solid #0077B5;
+	color: white;
+	border: 1px solid #0077B5;
 }
 
 .button_green {
 	font-size: 14px;
 	background-color: black;
 	color: #0f0;
-    border: 1px solid #0f0;
-    transition-duration: 0.4s;
+	border: 1px solid #0f0;
+	transition-duration: 0.4s;
 }
 
 .button_green:hover {
 	font-size: 14px;
 	background-color: green;
-    color: white;
-    border: 1px solid green;
+	color: white;
+	border: 1px solid green;
 }
 
 .button_red {
 	font-size: 14px;
 	background-color: black;
 	color: red;
-    border: 1px solid red;
-    transition-duration: 0.4s;
+	border: 1px solid red;
+	transition-duration: 0.4s;
 }
 
 .button_red:hover {
 	font-size: 14px;
 	background-color: red;
-    color: white;
-    border: 1px solid red;
+	color: white;
+	border: 1px solid red;
 }
 
 .button_blue {
 	font-size: 14px;
 	background-color: black;
 	color: blue;
-    border: 1px solid blue;
-    transition-duration: 0.4s;
+	border: 1px solid blue;
+	transition-duration: 0.4s;
 }
 
 .button_blue:hover {
 	background-color: blue;
-    color: white;
-    border: 1px solid blue;
+	color: white;
+	border: 1px solid blue;
 }
 
 .button_purple {
 	font-size: 14px;
 	background-color: black;
 	color: purple;
-    border: 1px solid purple;
-    transition-duration: 0.4s;
+	border: 1px solid purple;
+	transition-duration: 0.4s;
 }
 
 .button_purple:hover {
 	font-size: 14px;
 	background-color: purple;
-    color: white;
-    border: 1px solid purple;
+	color: white;
+	border: 1px solid purple;
 }
 
 .button_orange {
 	font-size: 14px;
 	background-color: transparent;
 	color: orange;
-    border: 1px solid orange;
-    transition-duration: 0.4s;
+	border: 1px solid orange;
+	transition-duration: 0.4s;
 }
 
 .button_orange:hover {
 	background-color: orange;
-    color: black;
-    border: 1px solid orange;
+	color: black;
+	border: 1px solid orange;
 }
 
 .button_cyan {
 	font-size: 14px;
 	background-color: transparent;
 	color: cyan;
-    border: 1px solid cyan;
-    transition-duration: 0.4s;
+	border: 1px solid cyan;
+	transition-duration: 0.4s;
 }
 
 .button_cyan:hover {
 	background-color: cyan;
-    color: black;
-    border: 1px solid cyan;
+	color: black;
+	border: 1px solid cyan;
 }
 
 button {
@@ -135,7 +136,7 @@ button {
 	text-decoration: none;
 	color: transparent;
 	border-bottom: 3px solid #def919;
-	font-family: Roboto Mono,monospace;
+	font-family: Roboto Mono, monospace;
 	text-rendering: optimizeLegibility;
 	margin: 10px;
 	padding-bottom: 5px;
@@ -145,16 +146,16 @@ button {
 	-webkit-text-fill-color: transparent;
 }
 
-.findme .arrow{
+.findme .arrow {
 	margin-left: 5px;
 	transition-duration: 0.4s;
 }
 
-.findme:hover .arrow{
+.findme:hover .arrow {
 	margin-left: 15px;
-}   
-	
-.findme .arrow:hover{
+}
+
+.findme .arrow:hover {
 	margin-left: 5px;
 }
 
@@ -168,6 +169,7 @@ button:disabled {
 }
 
 /* INPUT */
+
 .default_input {
 	height: 18pt;
 	transition-duration: 0.4s;
@@ -213,52 +215,111 @@ select:hover {
 }
 
 /* disable outline when focused */
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
+
+input:focus, select:focus, textarea:focus, button:focus {
+	outline: none;
 }
 
 /* MEDIA */
 
-@media (max-width: 575.98px) { 
-	body {
-		background-color: #000;
-		display: block;
+/* @media (max-width: 1000px) { 
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
 	}
 
 	#menu {
-		display: block;
+		flex: 30%;
 		border: 1px solid purple;
 		width: 100%;
 	}
 
 	#content {
-		display: block;
+		flex: 70%;
 		border: 1px solid purple;
 		margin-top: 1px;
 	}
 }
 
-@media (min-width: 575.98px) { 
-	body {
-		background-color: #000;
+@media (min-width: 1001px) { 
+	.container {  
 		display: flex;
+		flex-wrap: wrap;
 	}
 
 	#menu {
-		flex: 0 0 30%;
+		flex: 30%;
 		border: 1px solid purple;
 		min-width: 400px;
 	}
 
 	#content {
-		position: relative;
-		flex: 1;
+		flex: 70%;
 		border: 1px solid purple;
 		margin-left: 1px;
 	}
+} */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#menu {
+	flex: 30%;
+	border: 1px solid purple;
+	margin: 1px;
+	min-width: 430px;
+	max-width: 430px;
+}
+
+#content {
+	flex: 55%;
+	border: 1px solid purple;
+	margin: 1px;
+}
+
+@media (max-width: 1080px) {
+	.container {
+		flex-direction: column;
+	}
+	#menu {
+		max-width: 100% !important;
+	}
+	#content {
+		padding-bottom: 30px;
+	}
+	#bio_pic {
+		width: 300px !important;
+	}
+	.switch_menu {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: row;
+	}
+	.switch {
+		max-width: 125px !important;
+		height: auto !important;
+		margin: 20px !important;
+	}
+	.experienceP {
+		font-size: 12px !important;
+	}
+	
+	.experienceH4 {
+		font-size: 14px !important;
+	}
+
+	#about_div {
+		padding: 10px !important;
+		width: 90% !important;
+	}
+}
+
+body {
+	background-color: #000;
 }
 
 p, label, h1, h3, h4 {
@@ -288,6 +349,10 @@ h4 {
 	display: inline-block;
 }
 
+.switch_menu {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
 
 .bythenumber {
 	font-size: 24px;
@@ -328,11 +393,12 @@ h4 {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	text-align: justify;
 }
 
 #bio_pic {
 	width: 400px;
-	height: 300px;
+	height: auto;
 	margin-bottom: 20px;
 	box-shadow: 10px 5px blue;
 }
@@ -388,10 +454,10 @@ h3 {
 	display: block;
 	max-width: 300px;
 	height: auto;
-    text-align: center;
-    vertical-align: center;
-    margin-right:auto;
-	margin-left:auto;
+	text-align: center;
+	vertical-align: center;
+	margin-right: auto;
+	margin-left: auto;
 	margin-bottom: 30px;
 	box-shadow: 15px 10px purple;
 	cursor: pointer;
@@ -422,10 +488,10 @@ h3 {
 	display: block;
 	max-width: 300px;
 	height: auto;
-    text-align: center;
-    vertical-align: center;
-    margin-right:auto;
-	margin-left:auto;
+	text-align: center;
+	vertical-align: center;
+	margin-right: auto;
+	margin-left: auto;
 	margin-bottom: 10px;
 	box-shadow: 15px 10px #1536bb;
 }
@@ -457,7 +523,8 @@ table {
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
-	position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	position: relative;
+	transform: translate(-50%, -50%);
 }
