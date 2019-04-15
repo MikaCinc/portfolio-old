@@ -1,0 +1,5 @@
+// Whats planned next /
+
+- Routing
+- Skills page
+- Make #Coderobotic buttons have links to somewhere
