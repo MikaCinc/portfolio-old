@@ -65,7 +65,7 @@ window.onload = function () {
 	}
 
 	// Open default page:
-	var default_page_index = 3;
+	var default_page_index = 2;
 	contents[default_page_index].style.display = "inline-block";
 }
 
