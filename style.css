@@ -485,6 +485,7 @@ h3 {
 	color: black;
 	font-weight: bolder;
 	box-shadow: 20px 15px purple;
+	border-radius: 0px 15px 0px !important;
 }
 
 #about_div {
