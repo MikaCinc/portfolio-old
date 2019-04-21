@@ -1,9 +1,9 @@
 function instagram() {
-	window.open("https://www.instagram.com/mikac_inc/",'_blank');
+	window.open("https://www.instagram.com/mikac_inc/", '_blank');
 }
 
 function github() {
-	window.open("https://github.com/MikaCinc",'_blank');
+	window.open("https://github.com/MikaCinc", '_blank');
 }
 
 function linkedin() {
@@ -14,7 +14,7 @@ function about_div(n) {
 	var height = document.getElementById('slika').height
 	var width = document.getElementById('slika').width
 	//console.log(height + " / " + width)
-	if(n == 1) {
+	if (n == 1) {
 		document.getElementById("about_div").style.display = "inline-block"
 	} else {
 		document.getElementById("about_div").style.display = "none"
@@ -36,26 +36,26 @@ window.onload = function () {
 	// @mikac_inc menja boju
 	minc_color()
 
-	document.getElementById("slika").addEventListener("mouseover", function() {
-		this.src="prof2.jpeg"
+	document.getElementById("slika").addEventListener("mouseover", function () {
+		this.src = "prof2.jpeg"
 	})
-	document.getElementById("slika").addEventListener("mouseout", function() {
-		this.src="prof.jpg"
+	document.getElementById("slika").addEventListener("mouseout", function () {
+		this.src = "prof.jpg"
 	})
 
 	//Content switching
 
 	var elems = document.getElementsByClassName("switch");
 	var contents = document.getElementsByClassName("content_switch");
-	console.log(contents[3].id.split("_")[1], elems[3].innerHTML.toLowerCase())
-	for(let i=0; i<elems.length; i++) {
-		elems[i].addEventListener("click", ()=> {
-			for(let k=0; k<elems.length; k++) {
+	//console.log(contents[3].id.split("_")[1], elems[3].innerHTML.toLowerCase())
+	for (let i = 0; i < elems.length; i++) {
+		elems[i].addEventListener("click", () => {
+			for (let k = 0; k < elems.length; k++) {
 				elems[k].className = "switch"
 			}
 			elems[i].className = "switch selected";
-			for(let n=0; n<elems.length; n++) {
-				if(elems[i].innerHTML.toLowerCase() === contents[n].id.split("_")[1]) {
+			for (let n = 0; n < contents.length; n++) {
+				if (elems[i].innerHTML.toLowerCase() === contents[n].id.split("_")[1]) {
 					contents[n].style.display = "inline-block";
 				} else {
 					contents[n].style.display = "none";
@@ -63,18 +63,22 @@ window.onload = function () {
 			}
 		})
 	}
+
+	// Open default page:
+	var default_page_index = 3;
+	contents[default_page_index].style.display = "inline-block";
 }
 
 function minc_color() {
 	function rnd_color() {
-		return Math.floor(Math.random()*255)
+		return Math.floor(Math.random() * 255)
 	}
 
 	function rnd_rgb() {
 		return "rgb( " + rnd_color() + ", " + rnd_color() + ", " + rnd_color() + ")";
 	}
 
-	var interval = setInterval(function() {
+	var interval = setInterval(function () {
 		document.getElementById("mikac_inc").style.color = rnd_rgb();
 		document.getElementById("mikac_inc").style.textShadow = "0 0 20px " + rnd_rgb();
 	}, 1000)
