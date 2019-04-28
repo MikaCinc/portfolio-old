@@ -531,7 +531,10 @@ table {
 }
 
 .content_switch {
-	display: none;
+	transition: opacity 0.5s ease-in-out;
+    opacity: 0; 
+    height: 0;
+    overflow: hidden;
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
@@ -539,6 +542,11 @@ table {
 	left: 50%;
 	position: relative;
 	transform: translate(-50%, -50%);
+}
+
+.active {
+	opacity: 1;
+    height: auto;
 }
 
 .tShadow {
