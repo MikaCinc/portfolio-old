@@ -360,13 +360,13 @@ h4 {
 }
 
 .experienceP {
-	font-size: 18px;
+	font-size: 16px;
 	color: cyan;
 	display: inline-block;
 }
 
 .experienceH4 {
-	font-size: 20px;
+	font-size: 18px;
 	border-right: 3px solid yellow;
 	padding-right: 12px;
 	margin-right: 10px;
@@ -531,11 +531,11 @@ table {
 }
 
 .content_switch {
-	display: none;
+	/* display: none; */
 	transition: opacity 0.5s ease-in-out;
-    /* opacity: 0; */
-    /* height: 0;
-    overflow: hidden; */
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
 	margin: 0 auto;
 	text-align: center;
 	/* width: 100%;
@@ -547,10 +547,10 @@ table {
 }
 
 .active {
-	/* opacity: 1;
-	   height: auto; */ 
-	   /* display: inline-block; */
-	   display: block;
+	opacity: 1;
+	height: auto;
+	/* display: inline-block; */
+	/* display: block; */
 }
 
 .tShadow {
