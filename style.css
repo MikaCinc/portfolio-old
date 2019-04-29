@@ -387,14 +387,14 @@ h4 {
 }
 
 .gradientText {
-	background: linear-gradient(45deg, orangered ,yellow, aqua);
+	background: linear-gradient(45deg, orangered, yellow, aqua);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .gradientTextLite {
-	background: linear-gradient(45deg,yellow, limegreen);
+	background: linear-gradient(45deg, yellow, limegreen);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -533,17 +533,21 @@ table {
 .content_switch {
 	/* display: none; */
 	transition: opacity 0.5s ease-in-out;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
 	top: 50%;
 	left: 50%;
 	position: relative;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 .active {
