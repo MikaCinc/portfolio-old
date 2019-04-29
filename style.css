@@ -279,6 +279,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 	flex: 55%;
 	border: 1px solid purple;
 	margin: 1px;
+	position: relative;
 }
 
 @media (max-width: 1080px) {
