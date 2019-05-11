@@ -1,3 +1,5 @@
 // Whats planned next /
 
 - Skills page makeover
+
+- TYPED.JS

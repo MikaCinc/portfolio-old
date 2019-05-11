@@ -43,7 +43,7 @@ window.onload = function () {
 		this.src = "prof.jpg"
 	})
 
-	//Content switching
+	// Content switching
 
 	var elems = document.getElementsByClassName("switch");
 	var contents = document.getElementsByClassName("content_switch");
