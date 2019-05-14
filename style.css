@@ -313,7 +313,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 		font-size: 14px !important;
 	}
 	#about_div {
-		padding: 10px !important;
+		padding: 20px !important;
 		width: 90% !important;
 	}
 }
@@ -490,10 +490,10 @@ h3 {
 }
 
 #about_div {
-	padding: 15px;
+	padding: 25px;
 	color: #def919;
 	text-rendering: optimizeLegibility !important;
-	font-family: courier new;
+	font-family: Roboto Mono, monospace;
 	font-weight: bold;
 	border: 10px solid #def919;
 	transition-duration: 1s;
