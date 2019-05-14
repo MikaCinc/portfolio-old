@@ -43,6 +43,22 @@ window.onload = function () {
 		this.src = "prof.jpg"
 	})
 
+	// TYPED.JS things:
+
+	var options = {
+		stringsElement: '#typed-strings',
+		//strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+		typeSpeed: 10,
+		backSpeed: 20,
+		shuffle: false,
+		backDelay: 2000,
+		loop: true,
+		loopCount: Infinity,
+		smartBackspace: false,
+	}
+
+	var typed = new Typed("#typed", options);
+
 	// Content switching
 
 	var elems = document.getElementsByClassName("switch");
