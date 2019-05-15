@@ -410,7 +410,7 @@ h4 {
 	width: 400px;
 	height: auto;
 	margin-bottom: 20px;
-	box-shadow: 12px 7px blue;
+	box-shadow: 15px 10px orangered;
 	border-radius: 0px 15px 0px;
 }
 
@@ -441,7 +441,7 @@ h3 {
 	border-radius: 0px 25px 0px;
 	width: 200px;
 	height: auto;
-	box-shadow: 15px 10px orangered;
+	box-shadow: 15px 10px cyan;
 	margin-bottom: 30px;
 }
 
