@@ -75,16 +75,16 @@
 .button_purple {
 	font-size: 14px;
 	background-color: black;
-	color: purple;
-	border: 1px solid purple;
+	color: #c52bfd;
+	border: 1px solid #c52bfd;
 	transition-duration: 0.4s;
 }
 
 .button_purple:hover {
 	font-size: 14px;
-	background-color: purple;
+	background-color: #c52bfd;
 	color: white;
-	border: 1px solid purple;
+	border: 1px solid #c52bfd;
 }
 
 .button_orange {
