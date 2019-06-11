@@ -316,6 +316,41 @@ input:focus, select:focus, textarea:focus, button:focus {
 		padding: 20px !important;
 		width: 90% !important;
 	}
+
+	.content_switch {
+		/* display: none; */
+		display: block;
+		transition: opacity 0.5s ease-in-out;
+		opacity: 0;
+		height: 0;
+		overflow: hidden;
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+		/* -webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%); */
+		position: relative;
+		/* top: 50%;
+		left: 50%; */
+	}
+}
+@media (min-width: 1080px) {
+	.content_switch {
+		/* display: none; */
+		display: block;
+		transition: opacity 0.5s ease-in-out;
+		opacity: 0;
+		height: 0;
+		overflow: hidden;
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		position: relative;
+		top: 50%;
+		left: 50%;
+	}
 }
 
 body {
@@ -529,23 +564,6 @@ table {
 	transition-duration: 1s;
 	text-shadow: 0 0 10px #0f0;
 	font-family: Inconsolata, monospace !important;
-}
-
-.content_switch {
-	/* display: none; */
-	display: block;
-	transition: opacity 0.5s ease-in-out;
-	opacity: 0;
-	height: 0;
-	overflow: hidden;
-	margin: 0 auto;
-	text-align: center;
-	width: 100%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	position: relative;
-	top: 50%;
-	left: 50%;
 }
 
 .active {
