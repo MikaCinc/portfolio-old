@@ -5,5 +5,4 @@
 - Skills page makeover
 
 - TYPED.JS in more areas && fix current in bio
-- Vertical align fix!
 - Preporuke
