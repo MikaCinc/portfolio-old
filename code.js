@@ -11,8 +11,8 @@ function linkedin() {
 }
 
 function about_div(n) {
-	var height = document.getElementById('slika').height
-	var width = document.getElementById('slika').width
+	const height = document.getElementById('slika').height
+	const width = document.getElementById('slika').width
 	//console.log(height + " / " + width)
 	if (n == 1) {
 		document.getElementById("about_div").style.display = "inline-block"
