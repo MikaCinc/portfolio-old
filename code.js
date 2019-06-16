@@ -46,8 +46,8 @@ window.onload = function () {
 	// TYPED.JS things:
 
 	var options = {
-		stringsElement: '#typed-strings',
-		//strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+		//stringsElement: '#typed-strings',
+		strings: ["Born optimist", "Incorrigible enthusiast", "Ready to go to the end"],
 		typeSpeed: 10,
 		backSpeed: 20,
 		shuffle: false,
