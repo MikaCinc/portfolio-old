@@ -115,6 +115,20 @@
 	border: 1px solid cyan;
 }
 
+.button_yellow {
+	font-size: 14px;
+	background-color: transparent;
+	color: yellow;
+	border: 1px solid yellow;
+	transition-duration: 0.4s;
+}
+
+.button_yellow:hover {
+	background-color: yellow;
+	color: black;
+	border: 1px solid yellow;
+}
+
 button {
 	font-family: Inconsolata, monospace;
 	padding: 10px;
@@ -423,6 +437,7 @@ h4 {
 }
 
 .gradientText {
+	display: inline-block;
 	background: linear-gradient(45deg, orangered, yellow, aqua);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -430,7 +445,24 @@ h4 {
 }
 
 .gradientTextLite {
+	display: inline-block;
 	background: linear-gradient(45deg, yellow, limegreen);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gradientTextLite2 {
+	display: inline-block;
+	background: linear-gradient(45deg, aqua, #0f0);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gradientTextLite3 {
+	display: inline-block;
+	background: linear-gradient(45deg, white, orangered);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -485,6 +517,7 @@ h3 {
 }
 
 .sectionTitle {
+	text-transform: uppercase;
 	font-weight: bolder;
 	font-size: 24px;
 }
