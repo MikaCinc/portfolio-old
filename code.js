@@ -37,10 +37,10 @@ window.onload = function () {
 	minc_color()
 
 	document.getElementById("slika").addEventListener("mouseover", function () {
-		this.src = "prof2.jpeg"
+		this.src = "slike/prof2.jpg"
 	})
 	document.getElementById("slika").addEventListener("mouseout", function () {
-		this.src = "prof.jpg"
+		this.src = "slike/prof.jpg"
 	})
 
 	// TYPED.JS things:
