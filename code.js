@@ -44,8 +44,7 @@ window.onload = function () {
 	})
 
 	// TYPED.JS things:
-
-	var options = {
+	const options = {
 		//stringsElement: '#typed-strings',
 		strings: ["Born optimist", "Incorrigible enthusiast", "Ready to go to the end"],
 		typeSpeed: 10,
@@ -58,6 +57,15 @@ window.onload = function () {
 	}
 
 	var typed = new Typed("#typed", options);
+
+	const initializeTypedJS = (id) => {
+		// todo
+		/* console.log(id)
+		var typed1 = new Typed(`#${id}`, {
+			stringsElement: `#${id}`,
+			typeSpeed: 50,
+		}); */
+	}
 
 	// Content switching
 
@@ -79,7 +87,8 @@ window.onload = function () {
 				if (elems[i].innerHTML.toLowerCase() === pageNames[n]) {
 					//contents[n].style.display = "inline-block";
 					contents[n].className = 'content_switch active';
-					updateURL(n)
+					updateURL(n);
+					//initializeTypedJS('sectionTitle_' + pageNames[n]); TODO
 				} else {
 					//contents[n].style.display = "none";
 					contents[n].className = 'content_switch';

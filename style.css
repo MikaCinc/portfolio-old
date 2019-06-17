@@ -432,7 +432,7 @@ h4 {
 	color: yellow;
 }
 
-#biographyTitle {
+.cyan {
 	color: cyan;
 }
 
@@ -489,10 +489,6 @@ h4 {
 
 .interestsDIV {
 	text-align: center;
-}
-
-#interestsTitle {
-	color: lightgoldenrodyellow;
 }
 
 h3 {

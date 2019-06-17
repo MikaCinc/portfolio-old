@@ -4,5 +4,5 @@
 
 - Skills page makeover
 
-- TYPED.JS in more areas && fix current in bio
+- TYPED.JS in more areas
 - Preporuke
