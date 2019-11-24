@@ -330,7 +330,6 @@ input:focus, select:focus, textarea:focus, button:focus {
 		padding: 20px !important;
 		width: 90% !important;
 	}
-
 	.content_switch {
 		/* display: none; */
 		display: block;
@@ -348,6 +347,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 		left: 50%; */
 	}
 }
+
 @media (min-width: 1080px) {
 	.content_switch {
 		/* display: none; */
@@ -364,6 +364,9 @@ input:focus, select:focus, textarea:focus, button:focus {
 		position: relative;
 		top: 50%;
 		left: 50%;
+	}
+	.selected:before {
+		content: "> ";
 	}
 }
 
