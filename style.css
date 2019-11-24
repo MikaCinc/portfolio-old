@@ -430,7 +430,7 @@ ul {
 
 .gradientTextLite2 {
 	display: inline-block;
-	background: linear-gradient(45deg, aqua, #0f0);
+	background: linear-gradient(45deg, #0f0, cyan, cyan);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
