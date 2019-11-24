@@ -615,7 +615,7 @@ table {
 }
 
 .flex-wrapper-experience div p:first-of-type {
-	flex: 2;
+	flex: 1.33;
 	color: yellow;
 	text-align: right;
 	padding-right: 15px;
