@@ -374,7 +374,7 @@ body {
 	background-color: #000;
 }
 
-p, label, h1, h3, h4 {
+p, label, h1, h3, h4, span {
 	color: #0f0;
 	font-family: Roboto Mono, monospace;
 }
@@ -393,14 +393,6 @@ ul {
 	padding: 0 !important;
 }
 
-h4 {
-	border-left: 3px solid #0f0;
-	padding-left: 10px;
-	margin-left: 10px;
-	text-align: center;
-	display: inline-block;
-}
-
 .switch_menu {
 	margin-bottom: 20px;
 	margin-top: 20px;
@@ -410,25 +402,6 @@ h4 {
 	font-size: 24px;
 	color: cyan;
 	display: inline-block;
-}
-
-.experienceP {
-	font-size: 16px;
-	color: cyan;
-	display: inline-block;
-}
-
-.experienceH4 {
-	font-size: 18px;
-	border-right: 3px solid yellow;
-	padding-right: 12px;
-	margin-right: 10px;
-	display: inline-block;
-	color: yellow;
-}
-
-.experienceDIV {
-	text-align: center;
 }
 
 #experienceTitle {
@@ -466,6 +439,14 @@ h4 {
 .gradientTextLite3 {
 	display: inline-block;
 	background: linear-gradient(45deg, white, orangered);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gradientTextLite4 {
+	display: inline-block;
+	background: linear-gradient(to right, cyan, yellow);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -607,4 +588,44 @@ table {
 
 .tShadow {
 	text-shadow: 3px 5px purple;
+}
+
+.flex-wrapper div {
+	display: flex;
+	align-items: center;
+}
+
+.flex-wrapper div p:first-of-type {
+	flex: 1.5;
+	text-align: right;
+	padding-right: 15px;
+}
+
+.flex-wrapper div p:last-of-type {
+	flex: 2;
+	text-align: left;
+	border-left: 4px solid #0f0;
+	padding-left: 15px;
+	font-size: 18px;
+}
+
+.flex-wrapper-experience div {
+	display: flex;
+	align-items: center;
+}
+
+.flex-wrapper-experience div p:first-of-type {
+	flex: 2;
+	color: yellow;
+	text-align: right;
+	padding-right: 15px;
+	border-right: 4px solid yellow;
+}
+
+.flex-wrapper-experience div p:last-of-type {
+	flex: 1;
+	color: cyan;
+	text-align: left;
+	padding-left: 15px;
+	font-size: 18px;
 }
