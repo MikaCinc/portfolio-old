@@ -24,14 +24,21 @@ function about_div(n) {
 }
 
 window.onload = function () {
-	/* var a = "1px solid #0f0"
-	var b = "1px solid red"
-	var interval = setInterval (function() {
-		var timeout = setTimeout (function() {
-			document.getElementById('about_div').style.border = a
-		}, 1000)
-		document.getElementById('about_div').style.border = b
-	}, 2000) */
+	// TYPED.JS things:
+	const options = {
+		stringsElement: null,
+		strings: ["Incorrigible enthusiast", "Ready to go to the end", "Doing", "Web Development", "Street Workout", "and Elfak"],
+		typeSpeed: 10,
+		backSpeed: 20,
+		shuffle: false,
+		backDelay: 1500,
+		loop: true,
+		loopCount: Infinity,
+		smartBackspace: true,
+		showCursor: true,
+	}
+
+	var typed = new Typed(".typed", options);
 
 	// @mikac_inc menja boju
 	minc_color()
@@ -43,29 +50,14 @@ window.onload = function () {
 		this.src = "slike/prof.jpg"
 	})
 
-	// TYPED.JS things:
-	const options = {
-		//stringsElement: '#typed-strings',
-		strings: ["Incorrigible enthusiast", "Ready to go to the end", "Doing", "Web Development", "Street Workout", "and Elfak"],
-		typeSpeed: 10,
-		backSpeed: 20,
-		shuffle: false,
-		backDelay: 1500,
-		loop: true,
-		loopCount: Infinity,
-		smartBackspace: true,
-	}
-
-	var typed = new Typed("#typed", options);
-
-	const initializeTypedJS = (id) => {
-		// todo
-		/* console.log(id)
+	// @todo
+	/* const initializeTypedJS = (id) => {
+		console.log(id)
 		var typed1 = new Typed(`#${id}`, {
 			stringsElement: `#${id}`,
 			typeSpeed: 50,
-		}); */
-	}
+		});
+	} */
 
 	// Content switching
 

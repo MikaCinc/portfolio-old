@@ -136,7 +136,7 @@ button {
 }
 
 #findme_links {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	display: inline-block;
 	background: linear-gradient(45deg, orangered, yellow, aqua);
 	background-clip: text;
@@ -320,12 +320,6 @@ input:focus, select:focus, textarea:focus, button:focus {
 		height: auto !important;
 		margin: 20px !important;
 	}
-	.experienceP {
-		font-size: 12px !important;
-	}
-	.experienceH4 {
-		font-size: 14px !important;
-	}
 	#about_div {
 		padding: 20px !important;
 		width: 90% !important;
@@ -374,7 +368,7 @@ body {
 	background-color: #000;
 }
 
-p, label, h1, h3, h4, span {
+p, label, h1, h3, h4 {
 	color: #0f0;
 	font-family: Roboto Mono, monospace;
 }
@@ -424,20 +418,13 @@ ul {
 	-webkit-text-fill-color: transparent;
 }
 
-.gradientTextLite {
-	display: inline-block;
-	background: linear-gradient(45deg, yellow, limegreen);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
 .gradientTextLite2 {
 	display: inline-block;
 	background: linear-gradient(45deg, #0f0, cyan, cyan);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-weight: 600;
 }
 
 .gradientTextLite3 {
@@ -454,11 +441,13 @@ ul {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-weight: 600;
 }
 
 #bioParagraph {
 	margin: 0px 50px;
 	text-align: justify;
+	font-weight: 700;
 }
 
 #bio_pic {
@@ -540,10 +529,10 @@ ul {
 	max-width: 300px;
 	height: auto;
 	text-align: center;
-	vertical-align: center;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	margin-top: 5px;
 	box-shadow: 15px 10px #1536bb;
 }
 
@@ -647,7 +636,7 @@ table {
 
 .flex-wrapper-skills div.even-skill-group p:first-of-type {
 	flex: 1;
-	color: orangered;
+	color: #0f0;
 	font-size: 18px;
 	text-align: right;
 	padding-right: 15px;
