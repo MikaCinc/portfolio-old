@@ -2,7 +2,5 @@
 
 - Rewrite in React.js
 
-- Skills page makeover
-
 - TYPED.JS in more areas
 - Preporuke

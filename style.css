@@ -379,6 +379,10 @@ p, label, h1, h3, h4, span {
 	font-family: Roboto Mono, monospace;
 }
 
+h3 {
+	text-align: center;
+}
+
 li {
 	color: #ff7200;
 	font-family: Roboto Mono, monospace;
@@ -463,20 +467,6 @@ ul {
 	margin-bottom: 20px;
 	box-shadow: 15px 10px orangered;
 	border-radius: 0px 15px 0px;
-}
-
-.interestsP {
-	font-size: 18px;
-	color: lightgoldenrodyellow;
-	display: inline-block;
-}
-
-.interestsDIV {
-	text-align: center;
-}
-
-h3 {
-	text-align: center;
 }
 
 #uvod {
@@ -582,8 +572,6 @@ table {
 .active {
 	opacity: 1;
 	height: auto;
-	/* display: inline-block; */
-	/* display: block; */
 }
 
 .tShadow {

@@ -46,14 +46,14 @@ window.onload = function () {
 	// TYPED.JS things:
 	const options = {
 		//stringsElement: '#typed-strings',
-		strings: ["Born optimist", "Incorrigible enthusiast", "Ready to go to the end"],
+		strings: ["Incorrigible enthusiast", "Ready to go to the end", "Doing", "Web Development", "Street Workout", "and Elfak"],
 		typeSpeed: 10,
 		backSpeed: 20,
 		shuffle: false,
-		backDelay: 2000,
+		backDelay: 1500,
 		loop: true,
 		loopCount: Infinity,
-		smartBackspace: false,
+		smartBackspace: true,
 	}
 
 	var typed = new Typed("#typed", options);
