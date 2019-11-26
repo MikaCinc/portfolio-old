@@ -1,6 +1,5 @@
 // Whats planned next /
 
-- Rewrite in React.js
-
+Low priority:
 - TYPED.JS in more areas
 - Preporuke
