@@ -416,14 +416,16 @@ ul {
 
 .gradientText {
 	display: inline-block;
-	background: linear-gradient(45deg, orangered, yellow, aqua);
+	background: linear-gradient(45deg, aqua, #0f0, yellow);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .gradientTextLite2 {
-	display: inline-block;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
 	background: linear-gradient(45deg, #0f0, cyan, cyan);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -458,7 +460,7 @@ ul {
 	width: 400px;
 	height: auto;
 	margin-bottom: 20px;
-	box-shadow: 15px 10px orangered;
+	box-shadow: 15px 10px purple;
 	border-radius: 0px 15px 0px;
 }
 
@@ -471,7 +473,7 @@ ul {
 	border-radius: 0px 25px 0px;
 	width: 200px;
 	height: auto;
-	box-shadow: 15px 10px cyan;
+	box-shadow: 15px 10px purple;
 	margin-bottom: 30px;
 }
 
@@ -522,11 +524,11 @@ ul {
 
 #about_div {
 	padding: 25px;
-	color: #def919;
+	color: #0f0;
 	text-rendering: optimizeLegibility !important;
 	font-family: Roboto Mono, monospace;
 	font-weight: bold;
-	border: 10px solid #def919;
+	border: 10px solid #0f0;
 	transition-duration: 1s;
 	background-color: black;
 	display: block;
@@ -537,7 +539,7 @@ ul {
 	margin-left: auto;
 	margin-bottom: 20px;
 	margin-top: 5px;
-	box-shadow: 15px 10px #1536bb;
+	box-shadow: 15px 10px purple;
 }
 
 button {
