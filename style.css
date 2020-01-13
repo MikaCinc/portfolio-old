@@ -249,13 +249,13 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 	#menu {
 		flex: 30%;
-		border: 1px solid purple;
+		border: 1px solid #500f6e;
 		width: 100%;
 	}
 
 	#content {
 		flex: 70%;
-		border: 1px solid purple;
+		border: 1px solid #500f6e;
 		margin-top: 1px;
 	}
 }
@@ -268,13 +268,13 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 	#menu {
 		flex: 30%;
-		border: 1px solid purple;
+		border: 1px solid #500f6e;
 		min-width: 400px;
 	}
 
 	#content {
 		flex: 70%;
-		border: 1px solid purple;
+		border: 1px solid #500f6e;
 		margin-left: 1px;
 	}
 } */
@@ -287,7 +287,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 #menu {
 	flex: 30%;
-	border: 1px solid purple;
+	border: 1px solid #500f6e;
 	margin: 1px;
 	min-width: 430px;
 	max-width: 430px;
@@ -295,7 +295,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 #content {
 	flex: 55%;
-	border: 1px solid purple;
+	border: 1px solid #500f6e;
 	margin: 1px;
 	position: relative;
 }
@@ -460,7 +460,7 @@ ul {
 	width: 400px;
 	height: auto;
 	margin-bottom: 20px;
-	box-shadow: 15px 10px purple;
+	box-shadow: 15px 10px #500f6e;
 	border-radius: 0px 15px 0px;
 }
 
@@ -473,7 +473,7 @@ ul {
 	border-radius: 0px 25px 0px;
 	width: 200px;
 	height: auto;
-	box-shadow: 15px 10px purple;
+	box-shadow: 15px 10px #500f6e;
 	margin-bottom: 30px;
 }
 
@@ -503,7 +503,7 @@ ul {
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 30px;
-	box-shadow: 15px 10px purple;
+	box-shadow: 15px 10px #500f6e;
 	cursor: pointer;
 }
 
@@ -511,14 +511,14 @@ ul {
 	background-color: #0f0;
 	color: black;
 	font-weight: bolder;
-	box-shadow: 20px 15px purple;
+	box-shadow: 20px 15px #500f6e;
 }
 
 .selected {
 	background-color: #0f0;
 	color: black;
 	font-weight: bolder;
-	box-shadow: 20px 15px purple;
+	box-shadow: 20px 15px #500f6e;
 	border-radius: 0px 15px 0px !important;
 }
 
@@ -539,7 +539,7 @@ ul {
 	margin-left: auto;
 	margin-bottom: 20px;
 	margin-top: 5px;
-	box-shadow: 15px 10px purple;
+	box-shadow: 15px 10px #500f6e;
 }
 
 button {
@@ -570,7 +570,7 @@ table {
 }
 
 .tShadow {
-	text-shadow: 3px 5px purple;
+	text-shadow: 3px 5px #500f6e;
 }
 
 .flex-wrapper div {
@@ -656,4 +656,65 @@ table {
 	padding-left: 15px;
 	font-size: 22px;
 	color: orangered;
+}
+
+/* FLUENT */
+
+.reveal-focus {
+	border: 1px solid transparent !important;
+	outline: 5px solid transparent !important;
+	position: relative !important;
+	
+	border-color: #000 !important;
+	outline-color: #0f0 !important;
+	box-shadow: 0 0 15px 3px #0f0 !important;
+
+	animation: glowfade 2s ease-in-out;
+	-moz-animation: glowfade 2s ease-in-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+
+	z-index: 1 !important;
+}
+
+.reveal-focus-purple {
+	border: 1px solid transparent !important;
+	outline: 1px solid transparent !important;
+	position: relative !important;
+	
+	border-color: #000 !important;
+	outline-color: #500f6e !important;
+	box-shadow: 0 0 7px 2px #500f6e !important;
+
+	animation: glowfadePurple 2s ease-in-out;
+	-moz-animation: glowfadePurple 2s ease-in-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@-moz-keyframes glowfade {
+	from {
+		box-shadow: 0 0 25px 7px #0f0;
+	}
+	to {
+		box-shadow: 0 0 15px 3px #0f0;
+	}
+}
+
+@keyframes glowfade {
+	from {
+		box-shadow: 0 0 25px 7px #0f0;
+	}
+	to {
+		box-shadow: 0 0 15px 3px #0f0;
+	}
+}
+
+@keyframes glowfadePurple {
+	from {
+		box-shadow: 0 0 15px 5px #500f6e;
+	}
+	to {
+		box-shadow: 0 0 7px 2px #500f6e;
+	}
 }
