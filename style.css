@@ -291,6 +291,9 @@ input:focus, select:focus, textarea:focus, button:focus {
 	margin: 1px;
 	min-width: 430px;
 	max-width: 430px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 #content {
@@ -664,16 +667,13 @@ table {
 	border: 1px solid transparent !important;
 	outline: 5px solid transparent !important;
 	position: relative !important;
-	
 	border-color: #000 !important;
 	outline-color: #0f0 !important;
 	box-shadow: 0 0 15px 3px #0f0 !important;
-
 	animation: glowfade 2s ease-in-out;
 	-moz-animation: glowfade 2s ease-in-out;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
-
 	z-index: 1 !important;
 }
 
@@ -681,11 +681,9 @@ table {
 	border: 1px solid transparent !important;
 	outline: 1px solid transparent !important;
 	position: relative !important;
-	
 	border-color: #000 !important;
 	outline-color: #500f6e !important;
 	box-shadow: 0 0 7px 2px #500f6e !important;
-
 	animation: glowfadePurple 2s ease-in-out;
 	-moz-animation: glowfadePurple 2s ease-in-out;
 	animation-direction: alternate;
